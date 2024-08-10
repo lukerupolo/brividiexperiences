@@ -1,0 +1,96 @@
+/* Body and Container Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background-color: #FBDCFB; /* Background color */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Center vertically */
+}
+
+.main-container {
+    width: 390px;
+    height: 844px;
+    padding: 38.68px 16.97px 187.97px 16.97px;
+    background: #FBDCFB;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.content-wrapper {
+    width: 356.05px;
+    height: 617.35px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space between elements */
+}
+
+/* Header Text */
+.header-text {
+    width: 315.12px;
+    height: 50.48px;
+    text-align: center;
+    color: #FF0837;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 auto;
+}
+
+/* Header 2: This is the big kids table */
+#middle-section h2 {
+    color: #FF0837;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* Text: Ideally adult in drinking age and child in spirit */
+#middle-section p {
+    color: #FF0837;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Bottom Section Styles */
+#bottom-section {
+    margin-top: auto; /* Push to bottom of the container */
+    margin-bottom: 80px; /* Additional margin to move button down */
+    text-align: center;
+}
+
+/* Button Styles */
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 145.25px;
+    height: 47.56px;
+    background-color: #FF0837;
+    border: none;
+    border-radius: 28px;
+    cursor: pointer;
+    outline: none;
+}
+
+.cta-button span {
+    color: #FFC1FF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.48px;
+}

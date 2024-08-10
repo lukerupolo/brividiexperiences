@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat for the entire page */
+    background-color: #FFC800;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    height: 100vh;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.container {
+    width: 90%; /* Make container responsive */
+    max-width: 390px; /* Limit maximum width */
+    height: auto; /* Allow height to adjust based on content */
+    position: relative;
+    background: #FFC800;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px; /* Add some padding at the top */
+}
+
+.header-text {
+    width: 100%; /* Responsive width */
+    max-width: 373.026px;
+    text-align: center;
+    color: #FF5F00; /* Ensure contrast with background */
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 10px; /* Add space between elements */
+}
+
+.subheader-text {
+    width: 100%; /* Responsive width */
+    max-width: 373.026px;
+    text-align: center;
+    color: #FF5F00; /* Ensure contrast with background */
+    font-size: 42px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 40px; /* Increase space between text and image */
+}
+
+.carousel_track-container {
+    position: relative;
+    width: 100%;
+    max-width: 390px;
+    overflow: hidden; /* Hide overflow of slides */
+    margin-bottom: 20px; /* Add space below the carousel */
+}
+
+.carousel_track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.carousel_slide {
+    min-width: 100%; /* Full width of the container */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel_slide img {
+    width: 75%; /* Scale image down to 75% of the container width */
+    max-width: 225px; /* Limit the maximum width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 20px;
+}
+
+.carousel_nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.carousel_indicator {
+    width: 10px;
+    height: 10px;
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carousel_indicator.active {
+    background-color: #989898;
+}
+
+.description-container {
+    width: 100%;
+    max-width: 390px;
+    text-align: center;
+    color: #333; /* Text color for description */
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 20px; /* Space between carousel and description */
+    padding: 0 10px; /* Padding to keep text aligned properly */
+}
+
+.game-description {
+    font-family: 'Montserrat', sans-serif; /* Ensure Montserrat is used */
+    font-size: 16px;
+    color: black;
+    font-weight: 400;
+}
+
+.game-2-extra {
+    display: none; /* Initially hidden, shown when slide 2 is active */
+    text-align: left; /* Align text to the left */
+}
+
+.game-2-list {
+    list-style-type: disc;
+    padding-left: 20px; /* Indentation for bullet points */
+    font-family: 'Montserrat', sans-serif; /* Ensure Montserrat is used */
+    font-size: 16px;
+    color: black;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.how-to-play {
+    color: #FF5F00;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif; /* Ensure Montserrat is used */
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-align: left; /* Align text to the left for this section */
+}
+
+.game-2-image {
+    width: 239.88px;
+    height: 419.79px;
+    margin-top: 10px; /* Add margin to separate from text above */
+    display: block;
+    margin: 0 auto; /* Align the image to the left */
+}
+
+.play-button-container {
+    display: flex;
+    justify-content: center;
+    position: fixed; /* Fix the button to the viewport */
+    bottom: 20px; /* Position it 20px from the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    z-index: 100; /* Ensure it appears above other content */
+}
+
+.play-button {
+    width: 145.25px;
+    height: 47.56px;
+    background: #FF5F00;
+    border-radius: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.play-text {
+    width: 134.18px;
+    text-align: center;
+    color: #FFC1FF;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif; /* Ensure Montserrat is used */
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+    .subheader-text {
+        font-size: 32px; /* Adjust font size for smaller screens */
+    }
+
+    .header-text {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}

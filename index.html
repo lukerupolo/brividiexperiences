@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <div class="content-wrapper">
+            <div class="header-text">Herman’s</div>
+            <div id="middle-section">
+                <h2>THIS IS THE BIG KIDS TABLE</h2>
+                <p>Ideally adult in drinking age and child in spirit</p>
+            </div>
+            <div id="bottom-section">
+                <button class="cta-button" id="ctaButton"><span>I’M OVER 18</span></button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to handle button click and navigate to a new page
+        document.getElementById('ctaButton').addEventListener('click', function() {
+            // Redirect to the new page
+            window.location.href = 'menu.html'; // Change 'newpage.html' to your desired URL
+        });
+    </script>
+</body>
+</html>
+
