@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu - Mystery Drink Challenge</title> 
-    <link rel="stylesheet" href="css/challenge.css"> <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="css/challenge.css"> <!-- Link to the challenge CSS file -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -65,9 +65,18 @@
         <div class="tc-border"></div>
         <div class="tc-text">T&C’s</div>
 
-        <!-- Guess Button -->
-        <div class="guess-text">Guess</div>
+        <!-- Guess Button with ID -->
+        <div class="guess-text" id="guessButton">Guess</div>
         
     </div>
+
+    <!-- JavaScript to handle button click and navigate to guess.html -->
+    <script>
+        // JavaScript to handle button click and navigate to guess.html
+        document.getElementById('guessButton').addEventListener('click', function() {
+            // Redirect to the guess.html page
+            window.location.href = 'guess.html'; // Ensure guess.html is the correct path
+        });
+    </script>
 </body>
 </html>

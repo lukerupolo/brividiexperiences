@@ -87,6 +87,7 @@ body {
     border: none;
     border-radius: 50%;
     cursor: pointer;
+    flex-shrink: 0; /* Prevent shrinking */
 }
 
 .carousel_indicator.active {

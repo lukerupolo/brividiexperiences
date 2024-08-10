@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Mystery Drink</title>
+    <link rel="stylesheet" href="css/guess.css"> <!-- Link to the guess CSS file -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="guess-container">
+        <div class="guess-title">Guess the Mystery Drink</div>
+        
+        <!-- Form with action to result.html -->
+        <form id="guessForm" action="result.html" method="GET" onsubmit="return storeData()">
+            <div class="input-fields-container">
+                <div class="input-field">
+                    <label class="text-label" for="spirit">Your ‘Spirit’ prediction</label>
+                    <input type="text" id="spirit" name="spirit" class="input-border" required>
+                </div>
+                <div class="input-field">
+                    <label class="text-label" for="garnish">Your ‘Garnish’ prediction</label>
+                    <input type="text" id="garnish" name="garnish" class="input-border" required>
+                </div>
+                <div class="input-field">
+                    <label class="text-label" for="mixer">Your ‘Mixer’ prediction</label>
+                    <input type="text" id="mixer" name="mixer" class="input-border" required>
+                </div>
+            </div>
+            
+            <button type="submit" class="guess-button">
+                <div class="guess-button-text">Submit Guess</div>
+            </button>
+        </form>
+    </div>
+
+    <script>
+        function storeData() {
+            // Capture the values from the input fields
+            const spirit = document.getElementById('spirit').value;
+            const garnish = document.getElementById('garnish').value;
+            const mixer = document.getElementById('mixer').value;
+
+            // Store the values in localStorage
+            localStorage.setItem('spirit', spirit);
+            localStorage.setItem('garnish', garnish);
+            localStorage.setItem('mixer', mixer);
+
+            // Allow form submission to continue
+            return true;
+        }
+    </script>
+</body>
+</html>

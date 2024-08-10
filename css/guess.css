@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat for the entire page */
+    background-color: #000000; /* Set background to black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Center the content vertically */
+}
+
+.guess-container {
+    width: 390px;
+    min-height: 700px; 
+    position: relative; 
+    background: black;
+}
+
+/* Guess Title */
+.guess-title {
+    position: absolute;
+    top: 00px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat */
+    font-weight: 700;
+    color: white; /* Set the text color to white */
+}
+
+
+/* Input Fields Container */
+.input-fields-container {
+    position: absolute;
+    top: 180px; /* Adjust the top value to position the container as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%; /* Width of the input container */
+    padding: 10px 0; /* Padding for vertical space inside the container */
+}
+
+/* Input Field */
+.input-field {
+    margin-bottom: 20px;
+}
+
+.text-label {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: white; /* Set label text to white */
+}
+
+.input-border {
+    width: 94%;
+    padding: 8px;
+    border: 2px solid white; /* Set border color to white */
+    border-radius: 4px;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+/* Guess Button */
+.guess-button {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%; /* Match the width of the input fields */
+    padding: 10px;
+    background: linear-gradient(90deg, #53BEE9 0%, #8A1214 47.5%, #D12D8F 75%);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.guess-button-text {
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}

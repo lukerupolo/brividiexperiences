@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Results</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/result.css">
+</head>
+<body>
+    <div class="results-container">
+        <div class="result-title">Your Predictions</div>
+        <div class="result-row" id="spiritResult"></div>
+        <div class="result-row" id="garnishResult"></div>
+        <div class="result-row" id="mixerResult"></div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Retrieve the values from localStorage
+            const spirit = localStorage.getItem('spirit');
+            const garnish = localStorage.getItem('garnish');
+            const mixer = localStorage.getItem('mixer');
+
+            // Display the values on the result page
+            document.getElementById('spiritResult').textContent = `Spirit: ${spirit}`;
+            document.getElementById('garnishResult').textContent = `Garnish: ${garnish}`;
+            document.getElementById('mixerResult').textContent = `Mixer: ${mixer}`;
+        });
+    </script>
+</body>
+</html>
