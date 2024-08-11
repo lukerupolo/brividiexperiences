@@ -25,22 +25,19 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center; /* Centers children horizontally */
-    justify-content: center; /* Vertically centers all children */
+    justify-content: center; /* Centers children vertically */
 }
 
 .header-section {
-    text-align: center;
-    margin: 20px 0; /* Vertical spacing for headers */
-}
-
-.header-text {
     width: 100%; /* Full width for responsive design */
     max-width: 373px; /* Limit max width to match design constraints */
     color: #FF5F00;
+    text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 32px;
     font-weight: 700;
     line-height: normal;
+    margin: 20px 0; /* Vertical spacing for headers */
 }
 
 .first-image, .second-image {
@@ -51,6 +48,7 @@ body {
     margin: 0 auto; /* Centers the images horizontally */
     margin-top: 10px; /* Consistent top margin for spacing */
 }
+
 
 .second-image {
     margin-top: 5px; /* Reduced space between the images */
