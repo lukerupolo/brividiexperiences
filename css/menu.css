@@ -16,54 +16,37 @@ body {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Ensure this is set to center for horizontal alignment */
+    justify-content: center; /* This will vertically center all children if needed */
 }
 
-.header-text {
+.header-text, .subheader-text {
     width: 373.026px;
-    height: 50.387px;
     flex-shrink: 0;
     color: #FF5F00;
     text-align: center;
-    font-family: Montserrat;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 10%;
-    margin-left: -5%;
-}
-
-/* Figma styles for WIN PUB PRIZES */
-.subheader-text {
-    width: 373.026px;
-    height: 80px;
-    flex-shrink: 0;
-    text-align: center;
-    color: #FF5F00;
     font-family: 'Montserrat', sans-serif;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-top: 25px;
-    margin-left: -5%;
+    margin-top: 0%; /* Adjust as needed */
+    margin-left: -20px;
 }
 
-
-
-
-.first-image {
-width: 647.044px;
-height: 355.696px;
-flex-shrink: 0;
-margin-left: -48px;
-margin-top: -10%;
+.first-image, .second-image {
+    width: 100%; /* Full width of their container */
+    height: auto; /* Maintain aspect ratio */
+    flex-shrink: 0;
+    margin-left: -15px;
+    margin-right: auto; /* This centers the images horizontally */
+    margin-top: 0px; /* Consistent top margin for spacing, adjust as necessary */
 }
 
 .second-image {
-    width: 351px;
-    height: 263px;
-    margin-top: -50px; /* Example: Spacing adjustment */
+    margin-top: -5px; /* Adjusted to be consistent */
+    width: 105%; /* Full width of their container */
+    height: auto; /* Maintain aspect ratio */
     margin-left: -25px;
+
 }
