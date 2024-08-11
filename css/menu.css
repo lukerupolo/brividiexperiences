@@ -1,3 +1,10 @@
+/* General reset to ensure consistent rendering across browsers */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -10,43 +17,39 @@ body {
 
 .menu-container {
     width: 390px;
-    height: 979px;
+    max-width: 100%; /* Ensures the container is responsive */
+    height: auto; /* Allow height to adapt to content */
     position: relative;
     background: #FFC800;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Ensure this is set to center for horizontal alignment */
-    justify-content: center; /* This will vertically center all children if needed */
+    align-items: center; /* Centers children horizontally */
+    justify-content: center; /* Centers children vertically */
 }
 
 .header-text, .subheader-text {
-    width: 373.026px;
-    flex-shrink: 0;
+    width: 100%; /* Full width for responsive design */
+    max-width: 373px; /* Limit max width to match design constraints */
     color: #FF5F00;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 32px;
-    font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-top: 0%; /* Adjust as needed */
-    margin-left: -20px;
+    margin: 20px 0; /* Vertical spacing for headers */
 }
 
 .first-image, .second-image {
     width: 100%; /* Full width of their container */
+    max-width: 373px; /* Match the header's width */
     height: auto; /* Maintain aspect ratio */
     flex-shrink: 0;
-    margin-left: -15px;
-    margin-right: auto; /* This centers the images horizontally */
-    margin-top: 0px; /* Consistent top margin for spacing, adjust as necessary */
+    margin: 0 auto; /* Centers the images horizontally */
+    margin-top: 10px; /* Consistent top margin for spacing */
 }
 
 .second-image {
-    margin-top: -5px; /* Adjusted to be consistent */
-    width: 105%; /* Full width of their container */
-    height: auto; /* Maintain aspect ratio */
-    margin-left: -25px;
-
+    margin-top: 5px; /* Reduced space between the images */
 }
+
