@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu - Mystery Drink Challenge</title> 
+    <title>Menu - Mystery Drink Challenge</title>
     <link rel="stylesheet" href="css/challenge.css"> <!-- Link to the challenge CSS file -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -11,36 +11,32 @@
     <div class="menu-container">
 
         <!-- Drink Image -->
-        <img class="drink-image" src="https://s3-alpha-sig.figma.com/img/9bce/69fe/4fc3ef43e26f0c490a22c577f926f9f8?Expires=1724025600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PEg8BltkKVPg0TeoUmdKMr4S58jItdXV44yFBtkU4ERiU4FvShGrx7NVTJ592AhxJccDQz2YhlGeA7zgVGdjAdw9APdnNO66IRgkhK6vrEdh9w8VU6BjG2~dNazp64zpYC8prSmysCWewldwgdG3s1Woms0S4~r0WvSf-WmlyKe689ih9bv6a8-oAXX~GAtrzgGE6~WDrES-LHB~1zY5YVy~cwXDS9vYU8ogeEVp~U1ObnztdE57XWEJANzl-IpvRFYxSEHAClF7LarBzB354h~QWZ0j57mKm4z-EBLTC3cXXLkSxe7jVJpeb2fUu6IsIKF7Q-0PDAg4u9fwxHUPWg__" alt="Mystery Drink" />
-
-        <!-- Challenge Title -->
-        <div class="challenge-title">Challenge</div>
-
-        <!-- Mystery Drink Title -->
-        <div class="mystery-drink-title">MYSTERY DRINK</div>
-
-        <!-- Welcome Message -->
-        <div class="welcome-message">
-            Welcome to the Mystery Drink Challenge! Are you ready to test your taste buds and win some exciting prizes!
-        </div>
+        <img class="drink-image" src="https://s3-alpha-sig.figma.com/img/2f1a/8850/2fb16ec472110d5fcb2a25956fef8277?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ey2MeLrEaWzeZQ9teEr3g23gD90gPTvSH9RqzB6zCxgloLz~Xgte7e30NZj~4tkrfWfC6rTCFncoJsadviqLA9zbjKKVubSdeGYaQNSIGD-bGuhtuDM5cv~OWdQZYW9MLnzeDUARL~7MAEk~npAxAzEY8ZMbRfyIBPr~~WXFeBQw-tvOYDiTNOHcEHCWhgWWsUQBwGJgZo0FNEmhaEhy8qtOz79iyrGUBtnEyqEuIL-6BbzL0Ub8eyWflsnYcbHeUuMlz4JFPbN1IjJyohDsIziaB8ibFmgRZEYjSz4wkzvcpbBCWxlOv2dFLoTQ4EtxSzeixuBGkI7~mCnE0jNvsQ__" alt="Mystery Drink" />
 
         <!-- How to Play Text -->
         <div class="how-to-play">How to Play</div>
 
-        <!-- Request a Mystery Drink -->
-        <div class="mystery-drink-request">
-            Request a ‘Mystery Drink’ from the bar
+        <!-- Container with Border for Interaction Items -->
+        <div class="interaction-container">
+            <div class="interaction-texts">
+                <div class="interaction-item">
+                    <div class="cube cube-1"></div>
+                    <div class="text">Request a ‘Mystery Drink’ from the bar</div>
+                </div>
+                <div class="interaction-item">
+                    <div class="cube cube-2"></div>
+                    <div class="text">Submit your prediction</div>
+                </div>
+                <div class="interaction-item">
+                    <div class="cube cube-3"></div>
+                    <div class="text">Claim your Prize</div>
+                </div>
+            </div>
         </div>
-
-        <!-- Image Replacements for Diagonal Borders -->
-        <img class="border-image border-1" src="images/Vector 1.svg" alt="Decorative Border 1" />
-        <img class="border-image border-2" src="images/Vector 2.svg" alt="Decorative Border 2" />
-        <img class="border-image border-3" src="images/Vector 3.svg" alt="Decorative Border 3" />
 
         <!-- Reminder Text -->
         <div class="reminder">DON'T forget that...</div>
 
-        <!-- Entry Details with Bullets -->
         <div class="entry-details">
             <ul>
                 <li>Entry to the challenge requires the purchase of the mystery drink.</li>
@@ -48,26 +44,17 @@
                 <li>Participants from the same table must not participate separately.</li>
             </ul>
         </div>
-
-        <!-- Submit Your Prediction -->
-        <div class="submit-prediction">
-            <div class="button-background"></div>
-            <div class="button-text">Submit your prediction</div>
-        </div>
-
-        <!-- Claim Your Prize -->
-        <div class="claim-prize">
-            <div class="button-background"></div>
-            <div class="button-text">Claim your Prize</div>
-        </div>
+        
 
         <!-- T&C Border and Text -->
-        <div class="tc-border"></div>
-        <div class="tc-text">T&C’s</div>
+        <div class="tc-border">
+            <div class="tc-text">T&C’s</div>
+        </div>
+        
 
         <!-- Guess Button with ID -->
         <div class="guess-text" id="guessButton">Guess</div>
-        
+
     </div>
 
     <!-- JavaScript to handle button click and navigate to guess.html -->

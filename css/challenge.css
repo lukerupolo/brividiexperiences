@@ -4,127 +4,78 @@ body {
     background-color: #000000; /* Set background to black */
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; /* Align items to the top */
     min-height: 100vh; /* Center the content vertically */
+    overflow: auto; /* Enable scrolling if needed */
 }
 
 .menu-container {
-    width: 390px;
-    height: 1610px; 
+    width: 90vw;
+    max-width: 390px;
+    height: auto;
     position: relative; 
     background: black;
+    padding-bottom: 140px; /* Increase bottom padding for more space */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    overflow: hidden; /* Ensure child elements do not overflow */
 }
 
-/* Submit Your Prediction */
-.submit-prediction {
-    width: 272px;
-    height: 32px;
-    position: absolute;
-    top: 789px;
-    left: 11px;
-    background: black;
-    border-radius: 5px;
+/* Interaction Container */
+.interaction-container {
+    width: calc(100% - 40px); /* Reduce width by moving right side */
+    border-radius: 15px;
+    border: 3px solid #D12D8F; /* Styled border around interaction items */
+    padding: 15px;
+    margin: 20px 0;
 }
 
-.submit-prediction .button-text {
-    position: absolute;
-    top: 10px;
-    left: 23px;
-    color: white;
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif; /* Use Montserrat */
-    font-weight: 700;
+/* Interaction Texts */
+.interaction-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between each item */
 }
 
-/* Claim Your Prize */
-.claim-prize {
-    width: 272px;
-    height: 32px;
-    position: absolute;
-    top: 929px;
-    left: -12px;
-    background: black;
-    border-radius: 5px;
+.interaction-item {
+    display: flex;
+    align-items: center;
 }
 
-.claim-prize .button-text {
-    position: absolute;
-    top: 6px;
-    left: 46px;
-    color: white;
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif; /* Use Montserrat */
-    font-weight: 700;
+.cube {
+    width: 43.473px; /* Original width */
+    height: 47.421px; /* Original height */
+    background-size: 100% 344.144%;
+    background-repeat: no-repeat;
+    background-position: 0 -53.484px;
+    margin-right: 10px; /* Space between icon and text */
 }
 
-/* Request a Mystery Drink */
-.mystery-drink-request {
-    width: 219px;
-    height: 61px;
-    position: absolute;
-    top: 628px;
-    left: 36px;
-    color: white;
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif; /* Use Montserrat */
-    font-weight: 700;
+.cube-1 {
+    background-image: url('https://s3-alpha-sig.figma.com/img/bfe8/a112/2a9451c9e47147d8979dc0d2aff3ea16?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZxLI6PG5RpQ9MtjAebLvc2oNNN-yYdBOHMHdCereAjAmS~gpQhqZ1MRm2PbLimvq6zenwmJxsE06sKJ0wBqKt-ydVda1bmaBEmNYr8BXGQvnvF4inwYJTQNiP0HXiA45oI2Y97QTdMUzLTiv2iZJDN5HJLTdxwCtSB7jnb4Ndr8J-Tf1sGfit6qEIAKgK3hPIP6O4UDrjgh5WhzKsDiv9Wfwn95cygITQy~lmDmHfl9ESONZklDU8XYXAeOshf9gCezItZPziaV0qZUXuKU4Tht1fIJXuDxkETNDCq7B0e4-e1qy4odTxSMH6IdFXzwXQJF9~8gUb6pvgqBK0hNbxg__');
 }
 
-/* Challenge Text */
-.challenge-title {
-    width: 373.026px;
-    height: 51px;
-    position: absolute;
-    top: 57.13px;
-    left: 8.49px;
-    text-align: center;
-    background: linear-gradient(180deg, #D12D8F 0%, #53BEE9 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif; /* Use Montserrat */
-    font-weight: 700;
+.cube-2 {
+    background-image: url('https://s3-alpha-sig.figma.com/img/1c94/bf3a/887375b3c7fa2ecfaadaab5696425413?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=E7AH2XTm9bhjfkEje2dIe9r5hnhctzSYTtJgmckWcwni216GlcF~DCCIjqZdEj9~Q8GCIio2mP3RgP~Ii2anSJ-SIXPhHgAWTNYwd4Z5ECtuaXTDaw~Gh3ymC-6nyA~fdUz2bwNUimd6daCEyjpp6Yl-9BRWBScfuX5ukfhRyfFJqxGVdw20Ycqk7sn2vTmRIC18j-eiDv9lh6DQVA4klYUb7CDZCThKZMJEAtIF5dXBqEGwdqD~u6qHOcGB0euxgNbygcM7YZHztJESIxx0ZXawSohOlGVksKUk9ZAZ6M2WGNOReAiSsC9svS~QMUMmL5TI1JQK~pP8MWa0ER9ssQ__');
 }
 
-/* Mystery Drink Text */
-.mystery-drink-title {
-    width: 373.026px;
-    height: 51px;
-    position: absolute;
-    top: 82.63px;
-    left: 8.49px;
-    text-align: center;
-    font-size: 42px;
-    font-family: 'Montserrat', sans-serif; /* Use Montserrat */
-    font-weight: 700;
-    background: linear-gradient(180deg, #D12D8F 0%, #53BEE9 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.cube-3 {
+    background-image: url('https://s3-alpha-sig.figma.com/img/994a/7f7c/3f1db82e0ae752519b15b25afe06c022?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TonvvE7Vd06AHdkkATSC4BDAPR3KQTiIBgJ4DeWwC9OdfNhVycgU0DfVr0WZo2chX0x-crYWzCrV70x4k0cmUJkt43zWvIyA8w1OyVKbsjs6yI6enpquP5G63mgtoK-uJLW0hlocbyEUxctqjoj2ntJctqS7tudolbYbljQAtu-pij3MPwEExCPv5GZ-EFUey66hyrUhoyMd-CaSfLACYku6dzd1fwaN2iOHviYLLclfoBlFJvfJOicsf1bvU~27a3loSvKCwgDbUpxqIQ-09FuPOfMgdQw9sSQ-9TLRXIssyFUGq8T2vG1FREYz86ARU2vPGptqvtgHUljlRgTwzg__');
 }
 
-/* Welcome Message */
-.welcome-message {
-    width: 349px;
-    height: 98.67px;
-    position: absolute;
-    top: 423px;
-    left: 20px;
-    text-align: center;
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif; /* Use Montserrat */
-    font-weight: 700;
-    color: rgb(255, 255, 255);
+.text, .entry-details li {
+    color: #FFF; /* White color */
+    font-family: 'Roboto', sans-serif; /* Use Roboto */
+    font-size: 14px; /* Same font size */
+    font-style: normal;
+    font-weight: 700; /* Match the weight */
+    line-height: normal;
 }
 
 /* How to Play Text */
 .how-to-play {
-    position: absolute;
-    top: 549px;
-    left: 142px;
+    margin-top: 20px;
     font-family: 'Montserrat', sans-serif; /* Use Montserrat */
-    font-size: 22px;
+    font-size: 20px; /* Adjust to fit design */
     font-weight: 700;
     line-height: normal;
     background: linear-gradient(180deg, #D12D8F 0%, #53BEE9 100%);
@@ -138,112 +89,83 @@ body {
 .tc-border {
     width: 82px;
     height: 27px;
-    position: absolute;
-    top: 1289px;
-    left: 39px;
     border-radius: 9px;
-    border: 0.50px #D12D8F solid;
+    border: 0.5px #D12D8F solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevent overflow issues */
 }
 
 /* T&C Text */
 .tc-text {
-    position: absolute;
-    top: 1293px;
-    left: 59px;
-    text-align: center;
     color: white;
-    font-size: 16px;
+    font-size: 12px; /* Adjust size to fit within the border */
     font-family: 'Montserrat', sans-serif; /* Use Montserrat */
     font-weight: 700;
+    margin: 0; /* Ensure no extra spacing */
+    line-height: 1; /* Line height to ensure vertical centering */
+    text-align: center; /* Center text horizontally */
 }
 
 /* Guess Button */
 .guess-text {
-    width: 156px;
-    height: 36px;
-    position: absolute;
-    top: 1406px;
-    left: 123px;
+    width: 40%;
+    margin: 20px auto;
+    padding: 10px 0;
     background: radial-gradient(100% 100% at 50% 50%, #D12D8F 0%, #53BEE9 100%);
     border-radius: 9px;
     text-align: center;
     color: white;
-    font-size: 16px;
+    font-size: 16px; /* Adjust to fit design */
     font-family: 'Montserrat', sans-serif; /* Use Montserrat */
     font-weight: 700;
-    line-height: 36px; /* Center text vertically */
+    margin-bottom: 40px; /* Add space below the button */
 }
 
 /* Drink Image */
 .drink-image {
-    width: 394px;
-    height: 220px;
-    position: absolute;
-    top: 168px;
-    left: 0px;
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    max-width: 373px;
+    display: block;
+    margin: 0 auto;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset;
     border-radius: 10px;
 }
 
 /* Reminder Text */
 .reminder {
-    position: absolute;
-    top: 1070px;
-    left: 32px;
+    margin-top: 40px;
     background: linear-gradient(90deg, #D12D8F 0%, #53BEE9 100%);
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;    font-size: 16px;
+    -webkit-text-fill-color: transparent;    
+    font-size: 16px; /* Adjust to fit design */
     font-family: 'Montserrat', sans-serif; /* Use Montserrat */
     font-weight: 700;
+    text-align: center;
 }
 
 /* Entry Details */
 .entry-details {
-    width: 357px;
-    position: absolute;
-    top: 1098px;
-    left: 22px;
+    width: 85%;
+    margin: 20px 0; /* Keep vertical margins */
+    padding-left: 0; /* Remove left padding for full left alignment */
 }
 
 .entry-details ul {
-    padding-left: 20px; /* Add padding to align the list */
+    padding-left: 1.5em; /* Set padding to indent the bullet points */
     list-style-type: disc; /* Default bullet style */
+    margin: 0; /* Remove default margin */
 }
 
 .entry-details li {
-    color: white;
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif; /* Use Montserrat */
-    font-weight: 700;
-    margin-bottom: 8px; /* Space between bullets */
-}
-
-/* Image Replacements for Diagonal Borders */
-.border-image {
-    position: absolute;
-}
-
-.border-1 {
-    width: 93.80px;
-    height: 70.95px;
-    top: 671px;
-    left: 300px;
-    transform: rotate(0deg);
-}
-
-.border-2 {
-    width: 79.81px;
-    height: 68.24px;
-    top: 821px;
-    left: 307px;
-    transform: rotate(0deg);
-}
-
-.border-3 {
-    width: 83.40px;
-    height: 79.93px;
-    top: 961px;
-    left: 305px;
-    transform: rotate(-1deg);
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px; /* Match interaction text size */
+    font-style: normal;
+    font-weight: 700; /* Match interaction text weight */
+    line-height: normal;
+    margin-bottom: 10px; /* Space between list items */
 }
