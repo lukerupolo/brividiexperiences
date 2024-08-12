@@ -10,7 +10,7 @@ body {
 }
 
 .menu-container {
-    width: 90vw;
+    width: 90.001vw;
     max-width: 390px;
     height: auto;
     position: relative; 
