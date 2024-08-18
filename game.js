@@ -1,5 +1,5 @@
-const carousel = document.querySelector('.carousel_track');
-const dots = document.querySelectorAll('.carousel_indicator');
+const carousel = document.querySelector('.carousel');
+const dots = document.querySelectorAll('.dot');
 let currentIndex = 0;
 let isDragging = false;
 let startPosition = 0;
