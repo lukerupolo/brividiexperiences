@@ -1,7 +1,7 @@
 const carousel = document.querySelector('.carousel_track');
 const slides = Array.from(carousel.children);
 let isDragging = false;
-let startPosition = 0;
+let startPosition = 0.0001;
 let currentTranslate = 0;
 let previousTranslate = 0;
 let animationID;
