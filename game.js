@@ -1,5 +1,6 @@
-const carousel = document.querySelector('.carousel');
-const dots = document.querySelectorAll('.dot');
+const carousel = document.querySelector('.carousel_track');
+const slides = Array.from(carousel.children); // Get all slides
+const dots = document.querySelectorAll('.carousel_indicator');
 let currentIndex = 0;
 let isDragging = false;
 let startPosition = 0;
@@ -23,7 +24,7 @@ function touchEnd() {
 
     const movedBy = currentTranslate - previousTranslate;
 
-    if (movedBy < -100 && currentIndex < dots.length - 1) currentIndex += 1;
+    if (movedBy < -100 && currentIndex < slides.length - 1) currentIndex += 1;
     if (movedBy > 100 && currentIndex > 0) currentIndex -= 1;
 
     setPositionByIndex();
@@ -71,13 +72,15 @@ dots.forEach((dot, index) => {
     });
 });
 
-carousel.addEventListener('mousedown', touchStart(currentIndex));
-carousel.addEventListener('mouseup', touchEnd);
-carousel.addEventListener('mouseleave', touchEnd);
-carousel.addEventListener('mousemove', touchMove);
-
-carousel.addEventListener('touchstart', touchStart(currentIndex));
-carousel.addEventListener('touchend', touchEnd);
-carousel.addEventListener('touchmove', touchMove);
+slides.forEach((slide, index) => {
+    slide.addEventListener('mousedown', touchStart(index));
+    slide.addEventListener('mouseup', touchEnd);
+    slide.addEventListener('mouseleave', touchEnd);
+    slide.addEventListener('mousemove', touchMove);
+    
+    slide.addEventListener('touchstart', touchStart(index));
+    slide.addEventListener('touchend', touchEnd);
+    slide.addEventListener('touchmove', touchMove);
+});
 
 setPositionByIndex();
