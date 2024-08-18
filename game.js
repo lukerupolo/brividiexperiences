@@ -36,6 +36,7 @@ function touchMove(event) {
     if (isDragging) {
         const currentPosition = getPositionX(event);
         currentTranslate = previousTranslate + currentPosition - startPosition;
+        event.preventDefault(); // Prevent default scrolling behavior
     }
 }
 
@@ -77,10 +78,10 @@ slides.forEach((slide, index) => {
     slide.addEventListener('mouseup', touchEnd);
     slide.addEventListener('mouseleave', touchEnd);
     slide.addEventListener('mousemove', touchMove);
-    
-    slide.addEventListener('touchstart', touchStart(index));
-    slide.addEventListener('touchend', touchEnd);
-    slide.addEventListener('touchmove', touchMove);
+
+    slide.addEventListener('touchstart', touchStart(index), { passive: false });
+    slide.addEventListener('touchend', touchEnd, { passive: false });
+    slide.addEventListener('touchmove', touchMove, { passive: false });
 });
 
 setPositionByIndex();
