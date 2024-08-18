@@ -4,10 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Game Page</title>
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <!-- Your custom CSS -->
-    <link rel="stylesheet" href="css/game.css">
+    <link rel="stylesheet" href="css/game.css"> <!-- Link to the external CSS file -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -16,26 +13,28 @@
         <div class="header-text">CHOOSE A</div>
         <div class="subheader-text">TABLE GAME</div>
 
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide" data-url="https://example.com/game1">
+        <div class="carousel_track-container">
+            <ul class="carousel_track">
+                <li class="carousel_slide current-slide" data-description="Fast-paced and exciting game where quick decisions matter." data-url="https://example.com/game1">
                     <img src="images/Rectangle 2066.png" alt="Slide 1">
-                </div>
-                <div class="swiper-slide" data-url="https://www.facebook.com/fbcameraeffects/tryit/1024361268289630/">
+                </li>
+                <li class="carousel_slide" data-description="To start, point the phone at a player, and the experience will swap their head with the image of a celebrity. The player can't see who they are, but everyone else can. The player must guess which celebrity they are using only ‘Yes’ or ‘No’ Questions." data-url="https://www.facebook.com/fbcameraeffects/tryit/1024361268289630/">
                     <img src="images/celebrityheads.png" alt="Slide 2">
-                </div>
-                <div class="swiper-slide" data-url="https://example.com/game3">
+                </li>
+                <li class="carousel_slide" data-description="Test your trivia knowledge and outsmart your opponents." data-url="https://example.com/game3">
                     <img src="images/Rectangle 2066.png" alt="Slide 3">
-                </div>
-                <div class="swiper-slide" data-url="https://example.com/game4">
+                </li>
+                <li class="carousel_slide" data-description="A cooperative game that requires teamwork to win." data-url="https://example.com/game4">
                     <img src="images/Rectangle 2066.png" alt="Slide 4">
-                </div>
-            </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
-            <!-- Add Navigation -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="carousel_nav">
+            <button class="carousel_indicator active"></button>
+            <button class="carousel_indicator"></button>
+            <button class="carousel_indicator"></button>
+            <button class="carousel_indicator"></button>
         </div>
 
         <!-- Description container -->
@@ -60,9 +59,6 @@
         </div>
     </div>
 
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!-- Custom JavaScript -->
-    <script src="js/carousel.js"></script>
+    <script src="carousel.js"></script> <!-- Link to the external JavaScript file -->
 </body>
 </html>
