@@ -132,7 +132,7 @@ body {
     height: 419.79px;
     margin-top: 10px; /* Add margin to separate from text above */
     display: block;
-    margin: 0 auto; /* Center the image */
+    margin: 0.00001 auto; /* Center the image */
 }
 
 .play-button-container {
