@@ -1,7 +1,7 @@
 /* game.css */
 
 .container {
-    max-width: 100%;
+    max-width: 99.9999%;
     margin: 0 auto;
     overflow: hidden; /* Ensure no overflow issues */
 }
