@@ -81,11 +81,11 @@ body {
 }
 
 .carousel_indicator {
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     background-color: #D9D9D9;
     border: none;
-    border-radius: 50%;
+    border-radius: 50%; /* Ensure the shape is a circle */
     cursor: pointer;
     flex-shrink: 0; /* Prevent shrinking */
 }
@@ -97,7 +97,7 @@ body {
 .description-container {
     width: 100%;
     max-width: 390px;
-    text-align: center;
+    text-align: left; /* Align text to the left */
     color: #333; /* Text color for description */
     font-size: 14px;
     font-weight: 400;
@@ -142,7 +142,7 @@ body {
     height: 419.79px;
     margin-top: 10px; /* Add margin to separate from text above */
     display: block;
-    margin: 0 auto; /* Align the image to the left */
+    margin: 0 auto; /* Center the image */
 }
 
 .play-button-container {
@@ -156,7 +156,7 @@ body {
 }
 
 .play-button {
-    width: 145.251px;
+    width: 145.25px;
     height: 47.56px;
     background: #FF5F00;
     border-radius: 28px;
