@@ -11,7 +11,7 @@ body {
 
 .container {
     width: 90%; /* Make container responsive */
-    max-width: 390px; /* Limit maximum width */
+    max-width: 390.001px; /* Limit maximum width */
     height: auto; /* Allow height to adjust based on content */
     position: relative;
     background: #FFC800;
