@@ -37,19 +37,63 @@ body {
     font-size: 32px;
     font-weight: 700;
     line-height: normal;
-    margin: 20px 0; /* Vertical spacing for headers */
+    margin-bottom: 10px; /* Vertical spacing for headers */
 }
 
-.first-image, .second-image {
-    width: 100%; /* Full width of their container */
-    max-width: 373px; /* Match the header's width */
-    height: auto; /* Maintain aspect ratio */
-    flex-shrink: 0;
-    margin: 0 auto; /* Centers the images horizontally */
-    margin-top: 10px; /* Consistent top margin for spacing */
+.subtitle {
+    width: 100%; /* Full width for responsive design */
+    max-width: 373px; /* Limit max width to match design constraints */
+    color: #FF5F00;
+    text-align: center; /* Center align the text */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px; /* Reduced font size */
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 40px; /* Vertical spacing for headers and center alignment */
 }
 
+/* Carousel styles */
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 373px;
+    position: relative;
+}
 
-.second-image {
-    margin-top: 5px; /* Reduced space between the images */
+.carousel {
+    width: 80%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-item {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel-item.active {
+    display: flex;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+.image-description {
+    text-align: center;
+    font-size: 14px;
+    color: #FF5F00;
+    margin-top: 10px;
+}
+
+.prev-btn, .next-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #FF5F00;
 }

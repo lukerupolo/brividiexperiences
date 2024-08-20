@@ -3,30 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu - Your Website Title</title>
-    <link rel="stylesheet" href="css/menu.css"> <!-- Link to the new CSS for menu -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Herman's Arcade</title>
+    <link rel="stylesheet" href="css/menu.css">
 </head>
 <body>
     <div class="menu-container">
         <div class="header-section">
-            PLAY WITH FRIENDS<br/>&<br/>
-            WIN PUB PRIZES
+            HERMAN'S ARCADE
         </div>
-        <a href="challenge.html">
-            <img class="image first-image" src="https://s3-alpha-sig.figma.com/img/c409/1eac/5c8fba7ec1d50ff375e7e51a585c17d0?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nnv-4nSiZCndMWcYNx1XgIXTHoe2OzyR31iv0X0Z5aXmZCnhcz11ucKeDCeWgfDAK85RqZcXAZN5VDnxsKPObYblLJXFbpn-jJw~~US3q5LoB-WxUpx06-JmpDgRx9dSiZQ3jaT~j~uj05CpHMOg5nyrXKCp09NmKqyGU5ET0T2IPFnE-Sx~MeH072f8SoY-JRnRCN6RkBIZ4j87-aAK0s18kIwkD~mgSVKbMNes9kX-cgM7lIlWukHwjGP96spaGm9Qrd-4CwWZwTnYHCJQUE9wVwIbzY0CdgUkvbfY02mRF~lcLHm8fNqmpwhLnTfwmzRJ7JUZz3jc7h7-YObnOQ__" alt="Prize Challenge" />
-        </a>
-        <a href="game.html">
-            <img class="image second-image" src="https://s3-alpha-sig.figma.com/img/619a/e908/ad6e81b3a7671a44cb4d39030c54cef2?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=b~ZFgtc~mVUEHV0vjCjclQNQSS5J3Ntbhnn70xGY5V7ZpSk-ViA9u70BziQT8UkBI4K5RgZrPH8MANXW5iukAeYCbslCkTcfTyeX7ECDCHX1UYqxkwiRxQng9zE06UDWY-c5AJFi9e4AwglzkCujzWx~VyBYck0XMNnzFn01AY5Jmgbm4CBAPeJxkphd72xtl15ZbNHFA9evhsiRle~rkd5NxbopDVOrduZRLuwVlB2M5YaeaRSU8kfxhlw6sQNGeD0BsZkDgD6Ufd8fuMEV2oY22dPDi65sdVMflAPnUhtXSQQOigFZKQGXwNjjafA2QzGVHDbIuhmEx7JXQwUydA__" alt="Game Collection" />
-        </a>
+        <div class="subtitle">
+            Challenge your friends, and win exciting prizes!
+        </div>
+
+        <!-- Carousel Container -->
+        <div class="carousel-container">
+            <button class="prev-btn">❮</button>
+            <div class="carousel">
+                <div class="carousel-item active">
+                    <a href="challenge.html">
+                        <img class="image" src="https://s3-alpha-sig.figma.com/img/c409/1eac/5c8fba7ec1d50ff375e7e51a585c17d0?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nnv-4nSiZCndMWcYNx1XgIXTHoe2OzyR31iv0X0Z5aXmZCnhcz11ucKeDCeWgfDAK85RqZcXAZN5VDnxsKPObYblLJXFbpn-jJw~~US3q5LoB-WxUpx06-JmpDgRx9dSiZQ3jaT~j~uj05CpHMOg5nyrXKCp09NmKqyGU5ET0T2IPFnE-Sx~MeH072f8SoY-JRnRCN6RkBIZ4j87-aAK0s18kIwkD~mgSVKbMNes9kX-cgM7lIlWukHwjGP96spaGm9Qrd-4CwWZwTnYHCJQUE9wVwIbzY0CdgUkvbfY02mRF~lcLHm8fNqmpwhLnTfwmzRJ7JUZz3jc7h7-YObnOQ__" alt="Prize Challenge" />
+                    </a>
+                    <p class="image-description">Win a free drink if you can guess whats in our mystery cocktail!</p>
+                </div>
+                <div class="carousel-item">
+                    <a href="game.html">
+                        <img class="image" src="https://s3-alpha-sig.figma.com/img/619a/e908/ad6e81b3a7671a44cb4d39030c54cef2?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=b~ZFgtc~mVUEHV0vjCjclQNQSS5J3Ntbhnn70xGY5V7ZpSk-ViA9u70BziQT8UkBI4K5RgZrPH8MANXW5iukAeYCbslCkTcfTyeX7ECDCHX1UYqxkwiRxQng9zE06UDWY-c5AJFi9e4AwglzkCujzWx~VyBYck0XMNnzFn01AY5Jmgbm4CBAPeJxkphd72xtl15ZbNHFA9evhsiRle~rkd5NxbopDVOrduZRLuwVlB2M5YaeaRSU8kfxhlw6sQNGeD0BsZkDgD6Ufd8fuMEV2oY22dPDi65sdVMflAPnUhtXSQQOigFZKQGXwNjjafA2QzGVHDbIuhmEx7JXQwUydA__" alt="Game Collection" />
+                    </a>
+                    <p class="image-description">Explore our table game collection and enjoy endless fun!</p>
+                </div>
+            </div>
+            <button class="next-btn">❯</button>
+        </div>
     </div>
 
-    <script>
-        // JavaScript to handle button click and navigate to a new page
-        document.getElementById('ctaButton').addEventListener('click', function() {
-            // Redirect to the new page
-            window.location.href = 'menu.html'; // Change 'newpage.html' to your desired URL
-        });
-    </script>
+    <script src="carousel.js"></script>
 </body>
 </html>
