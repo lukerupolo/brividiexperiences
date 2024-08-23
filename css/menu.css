@@ -37,7 +37,7 @@ body {
     font-size: 32px;
     font-weight: 700;
     line-height: normal;
-    margin-bottom: 10px; /* Vertical spacing for headers */
+    margin: 20px 0; /* Vertical spacing for headers */
 }
 
 .subtitle {
@@ -49,51 +49,45 @@ body {
     font-size: 16px; /* Reduced font size */
     font-weight: 700;
     line-height: normal;
-    margin-bottom: 40px; /* Vertical spacing for headers and center alignment */
+    margin: 0px auto; /* Vertical spacing for headers and center alignment */
 }
 
-/* Carousel styles */
-.carousel-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 373px;
-    position: relative;
+.first-image, .second-image {
+    width: 100%; /* Full width of their container */
+    max-width: 373px; /* Match the header's width */
+    height: auto; /* Maintain aspect ratio */
+    flex-shrink: 0;
+    margin: 0 auto; /* Centers the images horizontally */
+    margin-top: 10px; /* Consistent top margin for spacing */
 }
 
-.carousel {
-    width: 80%;
-    overflow: hidden;
-    position: relative;
+.second-image {
+    margin-top: 5px; /* Reduced space between the images */
 }
 
-.carousel-item {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-}
-
-.carousel-item.active {
-    display: flex;
-}
-
-.image {
-    width: 100%;
-    height: auto;
-}
-
-.image-description {
+.image-descriptionM {
+    width: 96%; /* Make the description the same width as the image */
     text-align: center;
     font-size: 14px;
-    color: #FF5F00;
-    margin-top: 10px;
+    color: #FFFFFF;
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 0px 0px 15px 15px;
+    box-shadow: inset 1px 1px 3px #888, inset -1px -1px 3px #000;
+    margin-top: -20px;
+    opacity: 0.9;
 }
 
-.prev-btn, .next-btn {
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    color: #FF5F00;
+.image-descriptionG {
+    width: 96%; /* Make the description the same width as the image */
+    text-align: center;
+    font-size: 14px;
+    color: #FFFFFF;
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 0px 0px 15px 15px;
+    box-shadow: inset 1px 1px 3px #888, inset -1px -1px 3px #000;
+    margin-top: -60px;
+    opacity: 0.9;
+
 }
