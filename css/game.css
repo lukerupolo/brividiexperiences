@@ -43,55 +43,45 @@ body {
     margin-bottom: 40px; /* Increase space between text and image */
 }
 
-.carousel_track-container {
-    position: relative;
+.swiper-container {
     width: 100%;
     max-width: 390px;
     overflow: hidden; /* Hide overflow of slides */
     margin-bottom: 20px; /* Add space below the carousel */
 }
 
-.carousel_track {
+.swiper-wrapper {
     display: flex;
-    transition: transform 0.5s ease-in-out;
-    list-style: none;
-    padding: 0;
-    margin: 0;
 }
 
-.carousel_slide {
-    min-width: 100%; /* Full width of the container */
-    box-sizing: border-box;
+.swiper-slide {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-width: 100%; /* Each slide should take up full width */
 }
 
-.carousel_slide img {
+.swiper-slide img {
     width: 75%; /* Scale image down to 75% of the container width */
-    max-width: 225px; /* Limit the maximum width */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 225px;
+    height: auto;
     border-radius: 20px;
 }
 
-.carousel_nav {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-.carousel_indicator {
+.swiper-pagination-bullet {
     width: 15px;
     height: 15px;
     background-color: #D9D9D9;
-    border: none;
     border-radius: 50%; /* Ensure the shape is a circle */
-    cursor: pointer;
-    flex-shrink: 0; /* Prevent shrinking */
 }
 
-.carousel_indicator.active {
+.swiper-pagination-bullet-active {
     background-color: #989898;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #FF5F00; /* Customize navigation buttons */
 }
 
 .description-container {
@@ -142,7 +132,7 @@ body {
     height: 419.79px;
     margin-top: 10px; /* Add margin to separate from text above */
     display: block;
-    margin: 0 auto; /* Center the image */
+    margin: 0.00001 auto; /* Center the image */
 }
 
 .play-button-container {
