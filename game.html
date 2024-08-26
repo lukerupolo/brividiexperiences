@@ -3,66 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Game Page</title>
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <!-- Your custom CSS -->
+    <title>Game Menu</title>
+    <!-- Link to your CSS -->
     <link rel="stylesheet" href="css/game.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="header-text">CHOOSE A</div>
-        <div class="subheader-text">TABLE GAME</div>
-
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide" data-url="https://example.com/game1">
-                    <img src="images/Rectangle 2066.png" alt="Slide 1">
-                </div>
-                <div class="swiper-slide" data-url="https://www.facebook.com/fbcameraeffects/tryit/1024361268289630/">
-                    <img src="images/celebrityheads.png" alt="Slide 2">
-                </div>
-                <div class="swiper-slide" data-url="https://example.com/game3">
-                    <img src="images/Rectangle 2066.png" alt="Slide 3">
-                </div>
-                <div class="swiper-slide" data-url="https://example.com/game4">
-                    <img src="images/Rectangle 2066.png" alt="Slide 4">
+    <div class="menu-container">
+        <div class="menu-header">
+            <h1>Choose Your Game</h1>
+        </div>
+        <div class="game-grid">
+            <!-- Game 1 -->
+            <div class="game-card">
+                <img src="images/Rectangle 2066.png" alt="Game 1 Image">
+                <div class="game-description">
+                    <h2>Fast-paced and exciting game where quick decisions matter.</h2>
+                    <a class="play-button" href="finger.html" target="_blank">Play Now</a>
                 </div>
             </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
-            <!-- Add Navigation -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
-
-        <!-- Description container -->
-        <div class="description-container">
-            <p class="game-description">Fast-paced and exciting game where quick decisions matter.</p>
-            <div class="game-2-extra" style="display: none;">
-                <ul class="game-2-list">
-                    <li>Point the phone at a player to swap their head with a celebrity's image.</li>
-                    <li>The player cannot see their new head, but everyone else can.</li>
-                    <li>The player must guess the celebrity using only 'Yes' or 'No' questions.</li>
-                </ul>
-                <div class="how-to-play">HOW TO PLAY</div>
-                <img class="game-2-image" src="images/how to play.png" alt="How to play">
+            <!-- Game 2 -->
+            <div class="game-card">
+                <img src="images/celebrityheads.png" alt="Celebrity Heads">
+                <button class="view-button" onclick="location.href='celebrityheads.html'">View</button>
             </div>
-        </div>
-
-        <!-- New Play Button -->
-        <div class="play-button-container">
-            <a class="play-button" href="#" target="_blank">
-                <span class="play-text">PLAY</span>
-            </a>
+            
+            <!-- Game 3 -->
+            <div class="game-card">
+                <img src="images/Rectangle 2066.png" alt="Game 3 Image">
+                <div class="game-description">
+                    <h2>This is the third game description.</h2>
+                    <a class="play-button" href="https://example.com/game3" target="_blank">Play Now</a>
+                </div>
+            </div>
+            <!-- Game 4 -->
+            <div class="game-card">
+                <img src="images/Rectangle 2066.png" alt="Game 4 Image">
+                <div class="game-description">
+                    <h2>This is the fourth game description.</h2>
+                    <a class="play-button" href="https://example.com/game4" target="_blank">Play Now</a>
+                </div>
+            </div>
         </div>
     </div>
-
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!-- Custom JavaScript -->
-    <script src="js/carousel.js"></script>
 </body>
 </html>

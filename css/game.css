@@ -1,178 +1,102 @@
 body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif; /* Use Montserrat for the entire page */
-    background-color: #FFC800;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FFC800; /* Yellowy background color */
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Align items to the top */
-    height: 100vh;
-    overflow-x: hidden; /* Prevent horizontal overflow */
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-.container {
-    width: 90%; /* Make container responsive */
-    max-width: 390.001px; /* Limit maximum width */
-    height: auto; /* Allow height to adjust based on content */
-    position: relative;
-    background: #FFC800;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px; /* Add some padding at the top */
-}
-
-.header-text {
-    width: 100%; /* Responsive width */
-    max-width: 373.026px;
-    text-align: center;
-    color: #FF5F00; /* Ensure contrast with background */
-    font-size: 16px;
-    font-weight: 700;
-    line-height: normal;
-    margin-bottom: 10px; /* Add space between elements */
-}
-
-.subheader-text {
-    width: 100%; /* Responsive width */
-    max-width: 373.026px;
-    text-align: center;
-    color: #FF5F00; /* Ensure contrast with background */
-    font-size: 42px;
-    font-weight: 700;
-    line-height: normal;
-    margin-bottom: 40px; /* Increase space between text and image */
-}
-
-.swiper-container {
+.menu-container {
     width: 100%;
-    max-width: 390px;
-    overflow: hidden; /* Hide overflow of slides */
-    margin-bottom: 20px; /* Add space below the carousel */
+    max-width: 1200px;
+    background-color: #FFC800; /* Yellowy background color */
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
-.swiper-wrapper {
-    display: flex;
+.menu-header {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 100%; /* Each slide should take up full width */
+.menu-header h1 {
+    color: #FF5F00;
+    font-size: 36px;
+    margin: 0;
 }
 
-.swiper-slide img {
-    width: 75%; /* Scale image down to 75% of the container width */
-    max-width: 225px;
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.game-card {
+    background-color: #FFC800; /* Yellowy background color */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.game-card:hover {
+    transform: translateY(-10px);
+}
+
+.game-card img {
+    width: 100%;
     height: auto;
-    border-radius: 20px;
-}
-
-.swiper-pagination-bullet {
-    width: 15px;
-    height: 15px;
-    background-color: #D9D9D9;
-    border-radius: 50%; /* Ensure the shape is a circle */
-}
-
-.swiper-pagination-bullet-active {
-    background-color: #989898;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-    color: #FF5F00; /* Customize navigation buttons */
-}
-
-.description-container {
-    width: 100%;
-    max-width: 390px;
-    text-align: left; /* Align text to the left */
-    color: #333; /* Text color for description */
-    font-size: 14px;
-    font-weight: 400;
-    margin-top: 20px; /* Space between carousel and description */
-    padding: 0 10px; /* Padding to keep text aligned properly */
+    border-bottom: 1px solid #EFEFEF;
 }
 
 .game-description {
-    font-family: 'Montserrat', sans-serif; /* Ensure Montserrat is used */
-    font-size: 16px;
-    color: black;
-    font-weight: 400;
+    padding: 15px;
 }
 
-.game-2-extra {
-    display: none; /* Initially hidden, shown when slide 2 is active */
-    text-align: left; /* Align text to the left */
+.game-description h2 {
+    font-size: 18px;
+    color: #FF5F00; /* Orange color for descriptions */
+    margin: 0 0 10px;
 }
 
-.game-2-list {
-    list-style-type: disc;
-    padding-left: 20px; /* Indentation for bullet points */
-    font-family: 'Montserrat', sans-serif; /* Ensure Montserrat is used */
-    font-size: 16px;
-    color: black;
-    font-weight: 400;
-    margin-bottom: 25px;
-}
-
-.how-to-play {
-    color: #FF5F00;
-    font-size: 22px;
-    font-family: 'Montserrat', sans-serif; /* Ensure Montserrat is used */
-    font-weight: 700;
-    margin-bottom: 20px;
-    margin-left: 4px;
-    text-align: left; /* Align text to the left for this section */
-}
-
-.game-2-image {
-    width: 239.88px;
-    height: 419.79px;
-    margin-top: 10px; /* Add margin to separate from text above */
-    display: block;
-    margin: 0.00001 auto; /* Center the image */
-}
-
-.play-button-container {
-    display: flex;
-    justify-content: center;
-    position: fixed; /* Fix the button to the viewport */
-    bottom: 20px; /* Position it 20px from the bottom */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Adjust for centering */
-    z-index: 100; /* Ensure it appears above other content */
+.game-description p {
+    font-size: 14px;
+    color: #FF5F00; /* Orange color for descriptions */
+    margin-bottom: 15px;
 }
 
 .play-button {
-    width: 145.25px;
-    height: 47.56px;
-    background: #FF5F00;
-    border-radius: 28px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF5F00;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
-.play-text {
-    width: 134.19px;
-    text-align: center;
-    color: #FFC1FF;
-    font-size: 12px;
-    font-family: 'Montserrat', sans-serif; /* Ensure Montserrat is used */
-    font-weight: 700;
-    word-wrap: break-word;
+.play-button:hover {
+    background-color: #FF7F00;
 }
 
-/* Media Queries for smaller screens */
+/* Responsive Design */
 @media (max-width: 768px) {
-    .subheader-text {
-        font-size: 32px; /* Adjust font size for smaller screens */
+    .menu-header h1 {
+        font-size: 28px;
     }
 
-    .header-text {
-        font-size: 14px; /* Adjust font size for smaller screens */
+    .game-description h2 {
+        font-size: 16px;
+    }
+
+    .game-description p {
+        font-size: 12px;
     }
 }

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Put a Finger Down Game</title>
+    <link rel="stylesheet" href="finger.css"> <!-- Correct CSS file reference -->
+</head>
+<body>
+    <div class="game-container">
+        <div id="setup-screen" class="screen">
+            <h2>How many players?</h2>
+            <div id="player-buttons">
+                <button onclick="startGame(2)">2 Players</button>
+                <button onclick="startGame(3)">3 Players</button>
+                <button onclick="startGame(4)">4 Players</button>
+                <button onclick="startGame(5)">5 Players</button>
+            </div>
+        </div>
+        
+        <div id="game-screen" class="screen" style="display: none;">
+            <h2 id="prompt"></h2>
+            <button id="next-player-button" onclick="nextPlayer()">Next Player</button>
+            <div id="game-info">
+                <p>Player <span id="current-player"></span>, it's your turn!</p>
+                <button onclick="putFingerDown()">Put a Finger Down</button>
+            </div>
+        </div>
+        
+        <div id="leaderboard-screen" class="screen" style="display: none;">
+            <h2>Leaderboard</h2>
+            <div id="leaderboard"></div>
+            <button onclick="restartGame()">Play Again</button>
+        </div>
+    </div>
+
+    <script src="finger.js"></script> <!-- Correct JavaScript file reference -->
+</body>
+</html>

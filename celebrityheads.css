@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FFC800; /* Yellowy background color */
+    color: #333;
+    padding-bottom: 60px; /* Make space for the fixed Play Now button */
+}
+
+.game-page-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.game-icon {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.game-icon img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.game-description {
+    margin-bottom: 20px;
+}
+
+.game-description h2 {
+    font-size: 24px;
+    color: #FF5F00;
+    margin-bottom: 10px;
+}
+
+.game-description p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.how-to-play-container {
+    margin-bottom: 20px;
+}
+
+.how-to-play-container h3 {
+    font-size: 20px;
+    color: #FF5F00;
+    margin-bottom: 10px;
+}
+
+.how-to-play-container ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.how-to-play-container ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.game-image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.game-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Play Now Button (Fixed at Bottom) */
+.play-now-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FF5F00;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.play-now-button {
+    color: #FFF;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 15px 30px;
+    background-color: #FF5F00;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.play-now-button:hover {
+    background-color: #FF7F00;
+}
