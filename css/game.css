@@ -1,102 +1,116 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: #FFC800; /* Yellowy background color */
+    background-color: #001B35; /* Slightly darker background color */
+    color: #ffffff; /* Light text color */
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     min-height: 100vh;
     padding: 20px;
     box-sizing: border-box;
 }
 
-.menu-container {
-    width: 100%;
-    max-width: 1200px;
-    background-color: #FFC800; /* Yellowy background color */
-    padding: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
-
 .menu-header {
+    width: 100%;
     text-align: center;
-    margin-bottom: 20px;
+    padding: 20px 0;
+    background-color: #184e88; /* Slightly lighter background */
+    margin-bottom: 20px; /* Add space below header */
 }
 
 .menu-header h1 {
-    color: #FF5F00;
-    font-size: 36px;
+    color: #50E3C2; /* Light green-blue for header */
+    font-size: 24px;
     margin: 0;
+}
+
+.menu-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #013A5A; /* Darker blue for the container background */
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .game-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: 1fr; /* Single column layout for mobile */
     gap: 20px;
+    width: 100%; /* Ensure grid takes full width */
 }
 
 .game-card {
-    background-color: #FFC800; /* Yellowy background color */
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #014A7C; /* Darker shade for higher contrast */
+    border-radius: 15px;
+    padding: 20px;
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4); /* Slightly stronger shadow */
+    height: 500px; /* Increased height to accommodate vertical GIFs */
 }
 
 .game-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6); /* Darker shadow on hover */
 }
 
-.game-card img {
-    width: 100%;
-    height: auto;
-    border-bottom: 1px solid #EFEFEF;
+.game-image {
+    width: 80%; /* Adjusted width to keep a good aspect ratio */
+    height: 60%; /* Increased height to accommodate vertical GIF */
+    border-radius: 15px;
+    margin-bottom: 15px;
+    object-fit: cover; /* Ensure the image fits well within the container */
+}
+
+.game-title {
+    font-size: 20px;
+    margin: 0;
+    color: #ffffff; /* White for title */
 }
 
 .game-description {
-    padding: 15px;
-}
-
-.game-description h2 {
-    font-size: 18px;
-    color: #FF5F00; /* Orange color for descriptions */
-    margin: 0 0 10px;
-}
-
-.game-description p {
     font-size: 14px;
-    color: #FF5F00; /* Orange color for descriptions */
-    margin-bottom: 15px;
+    color: #DDDDDD; /* Light gray for description */
+    margin: 15px 0;
+    padding: 0 10px; /* Added padding for better text alignment */
 }
 
-.play-button {
+.view-button {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #FF5F00;
-    color: #FFF;
+    padding: 10px 0; /* Adjusted padding for height */
+    background-color: #50E3C2;
+    color: #00254D;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 25px; /* Rounded button style */
     font-size: 16px;
-    transition: background-color 0.3s ease;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    margin-top: 30px; /* Push the button to the bottom of the card */
+    width: 70%; /* Set width to 70% of the parent container */
+    max-width: 200px; /* Optionally, set a maximum width */
+    text-align: center; /* Center text within the button */
 }
 
-.play-button:hover {
-    background-color: #FF7F00;
+.view-button:hover {
+    background-color: #3BD1AA; /* Slightly darker green-blue */
+    transform: scale(1.05);
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .menu-header h1 {
-        font-size: 28px;
+        font-size: 20px;
     }
 
-    .game-description h2 {
-        font-size: 16px;
-    }
-
-    .game-description p {
-        font-size: 12px;
+    .view-button {
+        width: 100%;
+        padding: 10px 0;
     }
 }
